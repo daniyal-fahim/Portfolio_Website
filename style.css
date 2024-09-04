@@ -1,0 +1,166 @@
+   /* NAVBAR SECTION */
+   body{
+    background-image: linear-gradient(90deg,#D1E9F6,#F6EACB,#84A7A1);
+
+   }
+   .nav{
+    display: flex;
+    /* position:fixed; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color:#708871; */
+    /* background-image: linear-gradient(90deg,#352F44,#5C5470,#B9B4C7,#FAF0E6); */
+        width:100vw;
+    align-items: center;
+    
+    }
+    .nav1{
+        display: flex;
+        color:  #FEF3E2;
+    }
+    .nav1>img{
+        width:70px;
+    }
+    .nav1>ul>li{
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .nav2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 36px;
+    }
+    .nav2>button{
+        background-color:#352F44 ;
+        padding: 10px;
+        font-size: 18px;
+        margin: 10px;
+        border: 1px;
+        border-radius:50% ;
+    }
+    .nav2>button>a{
+        color:  #FEF3E2;
+    }
+    .nav2>button>a:hover{
+        color: red;
+    }
+    .navsear{
+       
+        background-color: #BEC6A0;
+        height: 30px;
+        width:200px;
+        display: flex;
+        align-items: center;
+    }
+    .navsear>textarea{
+        height: 25px;
+        width:200px;
+    }
+    .navsear>button{
+        height: 30px;
+        width:50px;
+    }
+    
+    
+    /* hero section */
+    .hero{
+        
+        background-image: linear-gradient(90deg,#D1E9F6,#F6EACB,#84A7A1);
+        height: 100vh;
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: monospace;
+    }
+    .hero>img{
+        border-radius: 50%;
+    }
+
+    #dyna{
+        display: inline-block;
+        font-family: monospace;
+        white-space: nowrap;
+        color:#352F44;
+        overflow: hidden;
+        border-right: 0.15em solid black; /* Cursor effect */
+        animation: typing 4s steps(30, end), blink 0.75s step-end infinite, erase 2s steps(30, end) 4s infinite;
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+      }
+      
+    @keyframes blink {
+        from, to { border-color: transparent; }
+        50% { border-color: black; }
+      }
+    /* Education */
+    .edu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.01fr 1fr;
+        grid-template-rows: auto;
+        /* background-image: linear-gradient(90deg,#1C1678,#8576FF,#7BC9FF,#A3FFD6); */
+        width:100vw;
+        
+        /* height: 100vh;
+        width:100vw; */
+    
+    }
+    .box{
+    border:5px solid black;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 2px;
+    }
+    .box>img{
+        border-radius: 50%;
+    }
+    .box:hover{
+        background-color: white;
+
+
+    }
+    .edu0{
+        grid-area: 1/1/2/4;
+    }
+    /* Responsive Design */
+    @media (min-width: 768px) {
+        .navsear>textarea {
+            width: 200px;
+        }
+        .nav2 {
+            font-size: 24px;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .hero>img {
+            width: 300px;
+            height: 400px;
+        }
+    }
+  
+    .hero1 {
+        width: 50%;
+        font-family: 'Arial', sans-serif; /* Sets a clean, modern font */
+        font-size: 18px; /* Sets a comfortable font size */
+        line-height: 1.6; /* Increases line height for readability */
+        color: #333; /* Dark gray color for the text */
+        border-left: 4px solid #4CAF50; /* Green left border for visual interest */
+        padding: 20px; /* Adds padding around the text */
+        margin: 20px 0; /* Adds margin above and below the paragraph */
+        border-radius: 8px; /* Rounds the corners */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+        max-width: 800px; /* Limits the width of the paragraph */
+        text-align: justify; /* Justifies the text for a clean look */
+        transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+      }
+      
+      .hero1:hover {
+        background-color: #e0f7fa; /* Light blue background on hover */
+      }
