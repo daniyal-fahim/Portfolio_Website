@@ -13,3 +13,17 @@ document.querySelector(".hero").addEventListener("click", function () {
     var i = (cnt++) % hero_array.length;
     document.querySelector(".hero1").innerHTML = hero_array[i];
 });
+// Typing effect for navbar
+const nameElement = document.getElementById("dyna");
+let nameText = "Daniyal Fahim";
+let i = 0;
+
+function typeName() {
+    if (i < nameText.length) {
+        nameElement.innerHTML += nameText.charAt(i);
+        i++;
+        setTimeout(typeName, 150); // Adjust typing speed
+    }
+}
+
+typeName();

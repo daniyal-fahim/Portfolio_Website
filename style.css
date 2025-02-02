@@ -30,7 +30,9 @@ body {
 }
 
 .nav1 h1 {
-    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    color: #fff;
 }
 
 .nav2 {
@@ -66,6 +68,12 @@ body {
     height: 180px;
     margin-bottom: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.7); /* Neon glow effect */
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 .hero1 h1 {
@@ -123,6 +131,15 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     width: 30%; /* Default to 3 projects per row */
     box-sizing: border-box;
+    transition: all 0.3s ease;
+    border: 2px solid #ddd; /* Default border */
+    padding: 15px;
+}
+
+.project-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the project box */
+    border: 2px solid #00ff00; /* Highlight border on hover */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7); /* Green neon glow effect */
 }
 
 .project-image {
@@ -130,6 +147,11 @@ body {
     height: 200px; /* Fixed height for images */
     object-fit: cover; /* Ensure the image covers the area without distorting */
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover .project-image {
+    transform: scale(1.05); /* Slight zoom effect on image */
 }
 
 /* Responsive adjustments for smaller screens */
@@ -291,4 +313,14 @@ body {
     .tech-card p {
         font-size: 14px; /* Adjust text size */
     }
+}
+
+.tech-card {
+    text-align: center;
+    padding: 10px;
+}
+
+.tech-card img {
+    height: 50px;
+    width: 50px;
 }
