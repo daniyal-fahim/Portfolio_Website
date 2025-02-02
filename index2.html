@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniyal Fahim - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            transition: background 0.3s ease;
+        }
+
+        .dark-mode {
+            background: #2c3e50;
+            color: white;
+        }
+
+        /* Navigation */
+        .nav {
+            background: #2c3e50;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .toggle-theme {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        #typing-effect {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        .section {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .project-card {
+            background: white;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .dark-mode .project-card {
+            background: #34495e;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="#" class="nav-brand">Daniyal Fahim</a>
+        <button class="toggle-theme" onclick="toggleTheme()"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <section class="hero">
+        <img src="./MOZ_3126.JPG" alt="Daniyal Fahim" class="profile-img">
+        <h1>Daniyal Fahim</h1>
+        <p id="typing-effect"></p>
+    </section>
+
+    <section class="section" id="education">
+        <h2>Education</h2>
+        <div>
+            <p>FAST University - B.S. Computer Science (2022-2026) | GPA: 3.67</p>
+            <p>Govt. Delhi College - Intermediate | A-One Grade</p>
+            <p>Nasra School - Matriculation | A-One Grade</p>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="project-card" data-aos="fade-up">
+            <h3>D-Pay</h3>
+            <p>Full Stack E-Wallet Project with JWT authentication and PostgreSQL</p>
+            <a href="https://ddd-banking-app-88r4.vercel.app/portfolio" target="_blank">View Project</a>
+        </div>
+        <div class="project-card" data-aos="fade-up">
+            <h3>Dijkstra Visualization</h3>
+            <p>Graph Algorithm Visualization with React and D3.js</p>
+            <a href="https://dijkstra-visualization-sandy.vercel.app/" target="_blank">View Project</a>
+        </div>
+        <div class="project-card" data-aos="fade-up">
+            <h3>D-Shopping</h3>
+            <p>Full Stack E-Commerce Project with MongoDB and PostgreSQL</p>
+            <a href="https://d-shopping.vercel.app/" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        const text = "Full Stack Developer | CS Student at FAST";
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("typing-effect").textContent += text[index];
+                index++;
+                setTimeout(typeEffect, 100);
+            }
+        }
+        typeEffect();
+
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        AOS.init();
+    </script>
+</body>
+</html>

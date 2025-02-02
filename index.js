@@ -1,18 +1,15 @@
-var cnt=0;
+// Interactive Hero Section
+var cnt = 0;
 var hero_array = [
-    "<p> Greetings! I'm Daniyal Fahim,  a dedicated Computer Science student with a passion for technology and a relentless drive to enhance my skills . Currently pursuing my Bachelor's degree in Computer Science,  I am on a journey to explore the ever-evolving world of technology and innovation.</p>",
-    "<p>In addition to my academic pursuits, I am proactively engaged in supplementary courses aimed at fortifying my foundation and staying abreast of the latest industry trends. This commitment stems from my unwavering desire to not only meet but exceed the challenges that a dynamic field like computer science presents.</p>",
-    "<p>My enthusiasm for problem-solving and coding is matched only by my eagerness to contribute meaningfully to the tech community. I believe in the power of continuous learning and strive to embrace new technologies and methodologies to stay ahead of the curve.</p>",
-    "<p> Throughout my academic journey, I have had the opportunity to work on diverse projects, honing my analytical and collaborative skills. These experiences have not only deepened my understanding of computer science but have also instilled in me a strong sense of adaptability and resilience.</p>"
-    ,"<p>As I navigate the exciting intersection of academia and practical application, I am actively seeking opportunities to apply my skills in real-world scenarios ,and look forward to contributing my knowledge and creativity to projects that push the boundaries of what technology can achieve. </p>"
-    ,"<p>Let's connect and explore the possibilities together. Feel free to reach out if you share similar interests or if you have insights to share. I am always open to networking and collaboration.</p>"
-    ,"<p>Let's connect and explore the possibilities together. Feel free to reach out if you share similar interests or if you have insights to share. I am always open to networking and collaboration.    </p>"
+    "<p>Greetings! I'm Daniyal Fahim, a passionate Computer Science student at FAST University, currently in my second year. As a full-stack developer, I specialize in building dynamic, scalable web applications that bridge the gap between cutting-edge technology and user-centric solutions.</p>",
+    "<p>Currently interning as a backend developer, I am honing my skills in backend technologies like Node.js, Express.js, PostgreSQL, and MongoDB, while also gaining experience with cloud platforms and RESTful API design. My goal is to craft robust, secure, and scalable solutions that solve real-world problems.</p>",
+    "<p>Beyond my academic work, I have led and contributed to several personal and collaborative projects, including D-Pay, a full-stack e-wallet platform, and D-Shopping, a comprehensive e-commerce solution. These projects have enhanced my understanding of both front-end and back-end development, including JWT authentication, database optimization, and front-end frameworks like React.js.</p>",
+    "<p>With a strong foundation in algorithms and data structures, I’ve implemented solutions such as Dijkstra's Algorithm for graph visualization, as well as compression techniques like Huffman encoding. I also have experience in Assembly language, which has sharpened my low-level understanding of computing.</p>",
+    "<p>As a driven learner, I actively pursue supplementary courses and certifications to stay up-to-date with industry trends. Whether it’s deepening my knowledge of machine learning, exploring cloud computing, or refining my full-stack capabilities, I'm always excited to expand my expertise and tackle new challenges.</p>",
+    "<p>I’m passionate about collaborating with other developers, problem-solving, and contributing to open-source projects. As I continue my journey in tech, I am eager to connect with like-minded individuals, explore opportunities, and contribute to the advancement of technology. Feel free to reach out if you’re interested in collaborating or if you’d like to share insights on tech trends!</p>"
 ];
 
-document.querySelector(".hero").addEventListener("click",function(){
-
-    var i=(cnt++)%7;
-  document.querySelector(".hero1").innerHTML=hero_array[i];
-  
-
+document.querySelector(".hero").addEventListener("click", function () {
+    var i = (cnt++) % hero_array.length;
+    document.querySelector(".hero1").innerHTML = hero_array[i];
 });

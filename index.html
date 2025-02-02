@@ -1,70 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>HTML CSS PROJECT</title>
+    <title>Daniyal Fahim - Portfolio</title>
     <link rel="stylesheet" href="./style.css">
-
-    <style>
-             </style>
 </head>
+
 <body>
-    <section  class="nav">
+    <nav class="nav">
         <div class="nav1">
-            <img src="./person-raised-hand.svg">
-            <ul style="list-style: none;">
-                <li><h1 id="dyna">Daniyal Fahim</h1></li>
-                <!-- <li><h4>Programming Ethutiast</h2></li> -->
-                <!-- <li><h5>Junior At Fast University</h3></li> -->
-            </ul>
-        </div>
-        <div class="navsear">
-            <textarea placeholder="Search Here"></textarea>
-            <button>Go!</button>
-            
+            <img src="./person-raised-hand.svg" alt="Logo">
+            <h1 id="dyna">Daniyal Fahim</h1>
         </div>
         <div class="nav2">
-            <button><a href='#hero'>Home</a> </button>
-            <button><a href="#edu">Education</a> </button>
-            <button><a href="../Portfolio/index.html">Home</a> </button>
-            <button><a href="../Portfolio/index.html">Home</a> </button>
+            <a href='#hero'>Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
-    </section>    
+    </nav>
 
+    <!-- Hero Section -->
     <section class="hero" id="hero">
-      <img src="./MOZ_3126.JPG" width="300px" height="400px">
-      <div class="hero1">
-        <ul style="list-style: none;">
-            <li><h1 >Hello, Welcome to Dan Website</h1></li>
-            <li><h2>I am Daniyal, a passionate learning enthusiast.</h2></li>
-            <li><h3>I am currently enrolled in the Bachelors degree in Computer Science from Fast University</h3></li>
-        </ul>
-      </div>
-    </section>
-    
-
-    <section class="edu" id="edu">
-        <div class="edu0"><h1>Education</h1></div>
-        
-        <div class="edu1 box">
-        <h1>SCHOOL</h1>
-        <p>I have done my matric from <h3>Nasra Public School</h3> in <h3>2020</h3> with <h3>A ONE Grade</h3></p>
-        <img src="./school.jfif" alt="SCHOOL LOGO">
+        <img src="./MOZ_3126.JPG" alt="Daniyal Fahim" class="hero-image">
+        <div class="hero1">
+            <h1>Hello, Welcome to My Portfolio</h1>
+            <h2>I am Daniyal, a passionate Full-Stack Developer.</h2>
+            <h3>Currently pursuing a Bachelor's degree in Computer Science at FAST University.</h3>
         </div>
-    <div class="edu2 box">
-        <h1>COLLEGE</h1>
-        <p>I have completed my inter from <h3>Govt. Dehli Inter Science College </h3> in <h3> 2022</h3> with <h3>A ONE Grade</h3></p>
-        <img src="./clg.jfif" alt="clg logo">
-    </div>
-    <div class="edu3 box">
-        <h1>University</h1>
-        <p>I am currently enrolled in the <h3>Bachelors of Computer Science Degree</h3> in <h3>Fast University</h3>with the current CGPA of <h3>3.67</h3> and achieving <h3>dean list of honour in all 4 semester.</h3></p>
-        <img src="./uni.png " alt ="uni logo">
-    </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1>About Me</h1>
+        <p>
+            I am a dedicated Computer Science student with a passion for technology and a drive to enhance my skills.
+            I am currently pursuing my Bachelor's degree in Computer Science at FAST University, with a focus on
+            Software Development, Database Management, and Full-Stack Web Development. My academic journey has equipped
+            me with a strong foundation in programming, problem-solving, and collaborative teamwork.
+        </p>
+        <p>
+            I have hands-on experience in backend development, RESTful APIs, and database management using MongoDB and
+            PostgreSQL.
+            I am also proficient in front-end technologies like React.js and have worked on several projects, including
+            a full-stack
+            e-wallet application and an airport management system.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="./dijkstra.PNG" alt="Dijkstra's Algorithm" class="project-image">
+                <h2>Dijkstra's Algorithm Implementation</h2>
+                <p>
+                    Designed an interactive visualization tool using React.js to provide intuitive insights into graph
+                    connectivity
+                    and shortest paths. Implemented the algorithm in C++ and Python, comparing execution times and
+                    memory usage.
+                </p>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div>
+                        <a href="https://github.com/daniyal-fahim/Dijkstra_Algorithm_In_Cpp_Python_React_js.git"
+                            target="_blank">
+                            <img style="height: 100px; width: 100px;" src="./GIT.png" alt="Repository">
+                        </a>
+                        <h2 style="text-align: center;">Repository</h2>
+                    </div>
+
+                    <div>
+                        <a href="https://dijkstra-visualization-sandy.vercel.app/" target="_blank">
+                            <img style="height: 100px; width: 100px;" src="./dijkstralogo.PNG" alt="Project">
+                        </a>
+                        <h2 style="text-align: center;">Live Preview</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="./DPAY/0Intro.PNG" alt="D-Pay" class="project-image">
+                <h2>D-Pay: Full Stack E-Wallet Project</h2>
+                <p>
+                    Integrated JWT authentication and bcrypt password hashing for robust security. Deployed the project
+                    on Vercel,
+                    ensuring scalability and reliability. Leveraged React.js for the frontend, Node.js with Express for
+                    the backend,
+                    and PostgreSQL for database management.
+                </p>
+
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div>
+                        <a href="https://github.com/shariqklan/Airline-Management-System---in-QT-GUI-C--.git"
+                            target="_blank">
+                            <img style="height: 100px; width: 100px;" src="./GIT.png" alt="Repository">
+                        </a>
+                        <h2 style="text-align: center;">Repository</h2>
+                    </div>
+
+                    <div>
+                        <a href="https://youtu.be/wlKzbDk72us?si=oHMFsUoht3yz6vQh" target="_blank">
+                            <img style="height: 100px; width: 100px;" src="./Airportlogo.avif" alt="Project">
+                        </a>
+                        <h2 style="text-align: center;">Live Youtube Preview</h2>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="project-box">
+                <img src="./Airline.PNG" alt="Airport Management System" class="project-image">
+                <h2>Airport Management System</h2>
+                <p>
+                    Developed an LMS portal mirroring Emirates Airlines' interface using C++ and the Qt framework.
+                    Focused on
+                    enhancing the user interface and creating a seamless experience.
+                </p>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div>
+                        <a href="https://github.com/dawoodadnann/DDD-Banking-App.git" target="_blank">
+                            <img style="height: 100px; width: 100px;" src="./GIT.png" alt="Frontend Repository">
+                        </a>
+                        <h2 style="text-align: center;">FRONTEND</h2>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/daniyal-fahim/ONLINE_BANKING_SYSTEM_BACKEND.git" target="_blank">
+                            <img style="height: 100px; width: 100px;" src="./GIT.png" alt="Backend Repository">
+                        </a>
+                        <h2 style="text-align: center;">BACKEND</h2>
+                    </div>
+
+                    <div>
+                        <a href="https://ddd-banking-app-88r4.vercel.app/" target="_blank">
+                            <img style="height: 100px; width: 100px;" src="./DPAY/5signup.PNG" alt="Project">
+                        </a>
+                        <h2 style="text-align: center;">Live Preview</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id=Skills>
+        <h1>Technologies</h1>
+        <div class="container">
+            <div class="tech-card">
+                <img src="./Skills/Html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="tech-card">
+                <img src="./Skills/CSS.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="tech-card">
+                <img src="./Skills/JS.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="tech-card">
+                <img src="./Skills/React.png" alt="React">
+                <p>React</p>
+            </div>
+            <div class="tech-card">
+                <img src="./Skills/Mongo.jpeg" alt="MongoDB">
+                <p>MongoDB</p>
+            </div>
+            <div class="tech-card">
+                <img src="./Skills/Node.png" alt="Node JS">
+                <p>Node JS</p>
+            </div>
+            <div class="tech-card">
+                <img src="./Skills/Py.png" alt="C#">
+                <p>Python</p>
+            </div>
+            <div class="tech-card">
+                <img src="./Skills/SQL.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+        </div>
 
     </section>
-    <script src="./index.js" charset="UTF-8" ></script>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <p>Email: <a href="mailto:daniyal236fahim@gmail.com">daniyal236fahim@gmail.com</a></p>
+        <p>Phone: 0331-3426952</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/daniyal-fahim">Daniyal Fahim</a></p>
+        <p>GitHub: <a href="https://github.com/Daniyal-fahim">Daniyal-fahim</a></p>
+    </section>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>

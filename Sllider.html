@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    /* Slider Container */
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    /* Slides */
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slides img {
+      width: 100%;
+      max-width: 600px;
+      object-fit: cover;
+    }
+
+    /* Navigation Buttons */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 10;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Heading and Text */
+    .slider-text {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .slider-text h2 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .slider-text p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="slides">
+      <img src="./MOZ_3126.JPG" alt="Image 1">
+      <img src="./MOZ_3126.JPG" alt="Image 2">
+      <img src="./MOZ_3126.JPG" alt="Image 3">
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+
+  <div class="slider-text">
+    <h2 id="slider-heading">Heading for Image 1</h2>
+    <p id="slider-text">Description for Image 1</p>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+
+    const headings = [
+      "Heading for Image 1",
+      "Heading for Image 2",
+      "Heading for Image 3"
+    ];
+
+    const texts = [
+      "Description for Image 1",
+      "Description for Image 2",
+      "Description for Image 3"
+    ];
+
+    function changeSlide(direction) {
+      const slides = document.querySelectorAll('.slides img');
+      const totalSlides = slides.length;
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      
+      // Change slide
+      const slideWidth = slides[0].clientWidth;
+      document.querySelector('.slides').style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      
+      // Change heading and text
+      document.getElementById('slider-heading').textContent = headings[currentSlide];
+      document.getElementById('slider-text').textContent = texts[currentSlide];
+    }
+
+    // Optionally, you can add auto-slide functionality
+    setInterval(() => changeSlide(1), 3000); // Change slide every 3 seconds
+  </script>
+</body>
+</html>
