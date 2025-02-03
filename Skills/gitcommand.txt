@@ -1,8 +1,0 @@
-www.linkedin.com/in/daniyal-fahim-26a89b248
-
-git status
-git add .
-git status
-git commit -m " Updating linkedin URL"
-git status
-git push -u origin main
