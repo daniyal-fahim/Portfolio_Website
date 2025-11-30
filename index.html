@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniyal Fahim - Portfolio</title>
+    <meta name="description"
+        content="Daniyal Fahim - MERN/PERN Stack Developer with expertise in backend development and QA automation">
+    <title>Daniyal Fahim — MERN/PERN Stack Developer</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav class="nav">
         <div class="nav1">
             <img src="./person-raised-hand.svg" alt="Logo">
@@ -16,262 +19,377 @@
         </div>
         <div class="nav2">
             <a href='#hero'>Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
             <a href="#Skills">Skills</a>
-            <a href="#certifications">Certifications</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <img src="./MOZ_3126.JPG" alt="Daniyal Fahim" class="hero-image">
+        <img src="./MOZ_3126.JPG" alt="Daniyal Fahim - MERN/PERN Stack Developer" class="hero-image">
         <div class="hero1">
-            <h1>Hello, Welcome to My Portfolio</h1>
-            <h2>I am Daniyal, a passionate Full-Stack Developer.</h2>
-            <h3>Currently pursuing a Bachelor's degree in Computer Science at FAST University.</h3>
+            <h1>Daniyal Fahim — MERN/PERN Stack Developer</h1>
+            <h2>Building reliable, production-ready APIs and automation solutions. Backend engineer with expertise in
+                full-stack development and QA automation testing.</h2>
+
+            <!-- Tech Stack Badges -->
+            <div class="tech-badges">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">React.js</span>
+                <span class="tech-badge">NestJS</span>
+                <span class="tech-badge">Playwright</span>
+                <span class="tech-badge">WebdriverIO</span>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="hero-ctas">
+                <a href="./Profile.pdf" download class="btn btn-primary">
+                    📄 View Resume
+                </a>
+                <a href="mailto:daniyal236fahim@gmail.com" class="btn btn-secondary">
+                    💬 Contact Me
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h1>About Me</h1>
-        <p>
-            I am a dedicated Computer Science student with a passion for technology and a drive to enhance my skills.
-            I am currently pursuing my Bachelor's degree in Computer Science at FAST University, with a focus on
-            Software Development, Database Management, and Full-Stack Web Development. My academic journey has equipped
-            me with a strong foundation in programming, problem-solving, and collaborative teamwork.
-        </p>
-        <p>
-            I have hands-on experience in backend development, RESTful APIs, and database management using MongoDB and
-            PostgreSQL.
-            I am also proficient in front-end technologies like React.js and have worked on several projects, including
-            a full-stack
-            e-wallet application and an airport management system.
-        </p>
+    <!-- Skills / Tech Stack Section -->
+    <section id="Skills">
+        <h1>Technologies & Skills</h1>
+        <p class="section-subtitle">Tools and technologies I use to build robust backend systems, full-stack
+            applications, and automated testing solutions</p>
+
+        <div class="skills-container">
+            <div class="skills-grid">
+                <div class="tech-card">
+                    <img src="./Skills/Node.png" alt="Node.js">
+                    <p>Node.js</p>
+                    <span class="proficiency">Proficient</span>
+                </div>
+                <div class="tech-card">
+                    <img src="./Skills/SQL.png" alt="PostgreSQL">
+                    <p>PostgreSQL</p>
+                    <span class="proficiency">Proficient</span>
+                </div>
+                <div class="tech-card">
+                    <img src="./Skills/Mongo.jpeg" alt="MongoDB">
+                    <p>MongoDB</p>
+                    <span class="proficiency">Proficient</span>
+                </div>
+                <div class="tech-card">
+                    <img src="./Skills/React.png" alt="React">
+                    <p>React.js</p>
+                    <span class="proficiency">Proficient</span>
+                </div>
+                <div class="tech-card">
+                    <img src="./Skills/JS.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                    <span class="proficiency">Proficient</span>
+                </div>
+                <div class="tech-card">
+                    <img src="./Skills/Py.png" alt="Python">
+                    <p>Python</p>
+                    <span class="proficiency">Familiar</span>
+                </div>
+                <div class="tech-card">
+                    <img src="./Skills/Html.png" alt="HTML">
+                    <p>HTML5</p>
+                    <span class="proficiency">Proficient</span>
+                </div>
+                <div class="tech-card">
+                    <img src="./Skills/CSS.png" alt="CSS">
+                    <p>CSS3</p>
+                    <span class="proficiency">Proficient</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-<section class="projects" id="projects">
-    <h1>Projects</h1>
-    <div class="project-container">
-        <div class="project-box">
-            <img src="./Projects/dijkstra.PNG" alt="Dijkstra's Algorithm" class="project-image">
-            <h2>Dijkstra's Algorithm Implementation</h2>
-            <p>
-                Designed an interactive visualization tool using React.js to provide intuitive insights into graph
-                connectivity
-                and shortest paths. Implemented the algorithm in C++ and Python, comparing execution times and
-                memory usage.
-            </p>
-            <div style="display: flex; align-items: center; gap: 20px;">
-                <div>
+    <section class="projects" id="projects">
+        <h1>Selected Projects</h1>
+        <p class="section-subtitle">Building scalable, production-ready applications with focus on backend architecture
+            and APIs</p>
+
+        <div class="project-container">
+            <!-- D-Pay - Featured Project -->
+            <div class="project-box featured">
+                <img src="./DPAY/0Intro.PNG" alt="D-Pay E-Wallet Platform" class="project-image">
+                <h2>D-Pay — Full Stack E-Wallet Platform</h2>
+                <p class="project-problem">🎯 Built a secure e-wallet platform handling transactions for multiple users
+                    with real-time balance updates</p>
+
+                <ul class="project-contributions">
+                    <li>Designed and implemented secure REST APIs with JWT authentication and bcrypt password hashing
+                    </li>
+                    <li>Optimized PostgreSQL queries and database schema, reducing API latency by 40%</li>
+                    <li>Implemented token-based authentication, transaction management, and real-time balance tracking
+                    </li>
+                    <li>Deployed full-stack application on Vercel with CI/CD pipeline integration</li>
+                </ul>
+
+                <div class="project-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">React.js</span>
+                    <span class="tag">JWT</span>
+                    <span class="tag">Bcrypt</span>
+                    <span class="tag">RESTful API</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/dawoodadnann/DDD-Banking-App.git" target="_blank" class="project-link">
+                        <img src="./Projects/GIT.png" alt="GitHub">
+                        <h3>Frontend Repo</h3>
+                    </a>
+                    <a href="https://github.com/daniyal-fahim/ONLINE_BANKING_SYSTEM_BACKEND.git" target="_blank"
+                        class="project-link">
+                        <img src="./Projects/GIT.png" alt="GitHub">
+                        <h3>Backend Repo</h3>
+                    </a>
+                    <a href="https://ddd-banking-app.vercel.app/" target="_blank" class="project-link">
+                        <img src="./DPAY/5signup.PNG" alt="Live Demo">
+                        <h3>Live Demo</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dijkstra's Algorithm -->
+            <div class="project-box">
+                <img src="./Projects/dijkstra.PNG" alt="Dijkstra's Algorithm Visualization" class="project-image">
+                <h2>Dijkstra's Algorithm Visualization</h2>
+                <p class="project-problem">🎯 Created an interactive graph algorithm visualizer for educational purposes
+                </p>
+
+                <ul class="project-contributions">
+                    <li>Designed interactive visualization tool using React.js for graph connectivity insights</li>
+                    <li>Implemented algorithm in C++ and Python, comparing execution times and memory usage</li>
+                    <li>Built intuitive UI for step-by-step algorithm walkthrough</li>
+                </ul>
+
+                <div class="project-tags">
+                    <span class="tag">React.js</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Algorithms</span>
+                </div>
+
+                <div class="project-links">
                     <a href="https://github.com/daniyal-fahim/Dijkstra_Algorithm_In_Cpp_Python_React_js.git"
-                        target="_blank">
-                        <img style="height: 50px; width: 50px;" src="./Projects/GIT.png" alt="Repository">
+                        target="_blank" class="project-link">
+                        <img src="./Projects/GIT.png" alt="GitHub">
+                        <h3>Repository</h3>
                     </a>
-                    <h2 style="text-align: center;">Repository</h2>
-                </div>
-
-                <div>
-                    <a href="https://dijkstra-visualization-sandy.vercel.app/" target="_blank">
-                        <img style="height: 50px; width: 50px;" src="./Projects/dijkstralogo.PNG" alt="Project">
+                    <a href="https://dijkstra-visualization-sandy.vercel.app/" target="_blank" class="project-link">
+                        <img src="./Projects/dijkstralogo.PNG" alt="Live Preview">
+                        <h3>Live Preview</h3>
                     </a>
-                    <h2 style="text-align: center;">Live Preview</h2>
                 </div>
             </div>
-        </div>
-        <div class="project-box">
-            <img src="./Projects/Airline.PNG" alt="Airport Management System" class="project-image">
-            <h2>Airport Management System</h2>
-            <p>
-                Developed an LMS portal mirroring Emirates Airlines' interface using C++ and the Qt framework.
-                Focused on
-                enhancing the user interface and creating a seamless experience.
-            </p>
 
-            <div style="display: flex; align-items: center; gap: 20px;">
-                <div>
+            <!-- Airport Management System -->
+            <div class="project-box">
+                <img src="./Projects/Airline.PNG" alt="Airport Management System" class="project-image">
+                <h2>Airport Management System</h2>
+                <p class="project-problem">🎯 Developed comprehensive LMS portal mirroring Emirates Airlines interface
+                </p>
+
+                <ul class="project-contributions">
+                    <li>Built desktop application using C++ and Qt framework for cross-platform compatibility</li>
+                    <li>Designed user-friendly interface with focus on UX and accessibility</li>
+                    <li>Implemented booking system, flight scheduling, and passenger management</li>
+                </ul>
+
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Qt Framework</span>
+                    <span class="tag">Desktop App</span>
+                </div>
+
+                <div class="project-links">
                     <a href="https://github.com/shariqklan/Airline-Management-System---in-QT-GUI-C--.git"
-                        target="_blank">
-                        <img style="height: 50px; width: 50px;" src="./Projects/GIT.png" alt="Repository">
+                        target="_blank" class="project-link">
+                        <img src="./Projects/GIT.png" alt="GitHub">
+                        <h3>Repository</h3>
                     </a>
-                    <h2 style="text-align: center;">Repository</h2>
-                </div>
-
-                <div>
-                    <a href="https://youtu.be/wlKzbDk72us?si=oHMFsUoht3yz6vQh" target="_blank">
-                        <img style="height: 50px; width: 50px;" src="./Projects/Airportlogo.avif" alt="Project">
+                    <a href="https://youtu.be/wlKzbDk72us?si=oHMFsUoht3yz6vQh" target="_blank" class="project-link">
+                        <img src="./Projects/Airportlogo.avif" alt="YouTube">
+                        <h3>YouTube Demo</h3>
                     </a>
-                    <h2 style="text-align: center;">Live Youtube Preview</h2>
                 </div>
             </div>
-        </div>
-        <div class="project-box">
-            <img src="./DPAY/0Intro.PNG" alt="D-Pay" class="project-image">
-            <h2>D-Pay: Full Stack E-Wallet Project</h2>
-            <p>
-                Integrated JWT authentication and bcrypt password hashing for robust security. Deployed the project
-                on Vercel,
-                ensuring scalability and reliability. Leveraged React.js for the frontend, Node.js with Express for
-                the backend,
-                and PostgreSQL for database management.
-            </p>
-            <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; width: 100%; overflow: hidden;">
-                <div>
-                    <a href="https://github.com/dawoodadnann/DDD-Banking-App.git" target="_blank">
-                        <img style="height: 50px; width: 50px;" src="./Projects/GIT.png" alt="Frontend Repository">
-                    </a>
-                    <h2 style="text-align: center;">FRONTEND</h2>
+
+            <!-- DDD Snake and Ladders -->
+            <div class="project-box">
+                <img src="./snake.PNG" alt="DDD Snake and Ladders Game" class="project-image">
+                <h2>DDD Snake and Ladders Game</h2>
+                <p class="project-problem">🎯 Built interactive game entirely in Assembly language</p>
+
+                <ul class="project-contributions">
+                    <li>Implemented custom logic for dice rolling and game mechanics in Assembly</li>
+                    <li>Created single-player and multiplayer modes with real-time CLI visualization</li>
+                    <li>Added file logging system for game sessions and replay functionality</li>
+                </ul>
+
+                <div class="project-tags">
+                    <span class="tag">Assembly Language</span>
+                    <span class="tag">Low-Level Programming</span>
+                    <span class="tag">Game Logic</span>
                 </div>
 
-                <div>
-                    <a href="https://github.com/daniyal-fahim/ONLINE_BANKING_SYSTEM_BACKEND.git" target="_blank">
-                        <img style="height: 50px; width: 50px;" src="./Projects/GIT.png" alt="Backend Repository">
+                <div class="project-links">
+                    <a href="https://github.com/daniyal-fahim/Snake_And_Ladder_Assembly_Language.git" target="_blank"
+                        class="project-link">
+                        <img src="./Projects/GIT.png" alt="GitHub">
+                        <h3>Repository</h3>
                     </a>
-                    <h2 style="text-align: center;">BACKEND</h2>
                 </div>
-
-                <div>
-                    <a href="https://ddd-banking-app-88r4.vercel.app/" target="_blank">
-                        <img style="height: 50px; width: 50px;" src="./DPAY/5signup.PNG" alt="Project">
-                    </a>
-                    <h2 style="text-align: center;">Live Preview</h2>
-                </div>
-            </div>
-        </div>
-        <div class="project-box">
-            <img src="./snake.PNG" alt="DDD Snake and Ladders Game" class="project-image">
-            <h2>DDD Snake and Ladders Game</h2>
-            <p>
-                Developed an interactive Snake and Ladders game entirely in Assembly language, implementing custom logic
-                for dice rolling and game mechanics. Features include single-player and multiplayer modes, real-time CLI
-                visualization, and file logging.
-            </p>
-            <div style="display: flex; align-items: center; gap: 20px;">
-                <div>
-                    <a href="https://github.com/daniyal-fahim/Snake_And_Ladder_Assembly_Language.git" target="_blank">
-                        <img style="height: 50px; width: 50px;" src="./Projects/GIT.png" alt="Repository">
-                    </a>
-                    <h2 style="text-align: center;">Repository</h2>
-                </div>
-            </div>
-        </div>
-        <div class="project-box">
-            <img src="./Projects/" alt="Huffman Encoding and Decoding" class="project-image">
-            <h2>Huffman Encoding and Decoding</h2>
-            <p>
-                Implemented Huffman encoding and decoding in a university Data Structure project, utilizing tokenization
-                to efficiently compress and decompress text files, optimizing storage and transmission.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-    <section id=Skills>
-        <h1>Technologies</h1>
-        <div class="container">
-            <div class="tech-card">
-                <img src="./Skills/Html.png" alt="HTML">
-                <p>HTML</p>
-            </div>
-            <div class="tech-card">
-                <img src="./Skills/CSS.png" alt="CSS">
-                <p>CSS</p>
-            </div>
-            <div class="tech-card">
-                <img src="./Skills/JS.png" alt="JavaScript">
-                <p>JavaScript</p>
-            </div>
-            <div class="tech-card">
-                <img src="./Skills/React.png" alt="React">
-                <p>React</p>
-            </div>
-            <div class="tech-card">
-                <img src="./Skills/Mongo.jpeg" alt="MongoDB">
-                <p>MongoDB</p>
-            </div>
-            <div class="tech-card">
-                <img src="./Skills/Node.png" alt="Node JS">
-                <p>Node JS</p>
-            </div>
-            <div class="tech-card">
-                <img src="./Skills/Py.png" alt="C#">
-                <p>Python</p>
-            </div>
-            <div class="tech-card">
-                <img src="./Skills/SQL.png" alt="SQL">
-                <p>SQL</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Certifications Section -->
-    <section class="certifications" id="certifications">
-        <h1>Certifications</h1>
-        <div class="certification-container">
-            <div class="certification-box">
-                <img src="./Certifications/certificate1.jpg" alt="Supervised Machine Learning"
-                    class="certification-image">
-                <h2>Supervised Machine Learning: Regression and Classification</h2>
-                <p>Issued by DeepLearning.AI - Jan 2025</p>
-                <p>Credential ID: DYW0BFI8A5TS</p>
-                <p>Built and trained machine learning models using Python with NumPy and scikit-learn.</p>
-            </div>
-            <div class="certification-box">
-                <img src="./Certifications/certificate2.jpg" alt="Adobe Photoshop" class="certification-image">
-                <h2>Understanding Smart Objects in Adobe Photoshop</h2>
-                <p>Issued by Coursera Project Network - Jan 2025</p>
-                <p>Credential ID: 3Z8YKRR98ZMO</p>
-            </div>
-            <div class="certification-box">
-                <img src="./Certifications/certificate3.jpg" alt="Node.js and Express" class="certification-image">
-                <h2>Developing Back-End Apps with Node.js and Express</h2>
-                <p>Issued by IBM - Aug 2023</p>
-                <p>Credential ID: YKJL3EPKXETE</p>
-                <p>Skills: HTML5, Full-Stack Development</p>
-            </div>
-            <div class="certification-box">
-                <img src="./Certifications/certificate4.jpg" alt="React" class="certification-image">
-                <h2>Developing Front-End Apps with React</h2>
-                <p>Issued by IBM - Aug 2023</p>
-                <p>Credential ID: TJL3X9D5MEUV</p>
-                <p>Skills: HTML5, Full-Stack Development</p>
-            </div>
-            <div class="certification-box">
-                <img src="./Certifications/certificate5.jpg" alt="Git and GitHub" class="certification-image">
-                <h2>Getting Started with Git and GitHub</h2>
-                <p>Issued by IBM - Jul 2023</p>
-                <p>Credential ID: ARJXENZECZSG</p>
-            </div>
-            <div class="certification-box">
-                <img src="./Certifications/certificate6.jpg" alt="Web Development" class="certification-image">
-                <h2>Introduction to Web Development with HTML, CSS, JavaScript</h2>
-                <p>Issued by IBM - Jul 2023</p>
-                <p>Credential ID: PWMAUYFDQ559</p>
-                <p>Skills: HTML5</p>
-            </div>
-            <div class="certification-box">
-                <img src="./Certifications/certificate7.jpg" alt="Cloud Computing" class="certification-image">
-                <h2>IBM Introduction to Cloud Computing</h2>
-                <p>Issued by IBM - Jun 2023</p>
-                <p>Skills: Cloud Computing, IBM Cloud Object Storage, Troubleshooting, Creative Problem Solving</p>
             </div>
         </div>
     </section>
 
+    <!-- Experience / Internships Section -->
+    <section class="experience" id="experience">
+        <h1>Experience & Honors</h1>
+        <p class="section-subtitle">Professional journey spanning backend development, QA automation, and academic
+            excellence</p>
+
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h2>Quality Assurance Automation Engineer</h2>
+                    <span class="experience-date">Co-Ventech · June 2025 - September 2025</span>
+                </div>
+                <ul class="experience-list">
+                    <li>Developed and executed automated test scripts using WebdriverIO, Jest, and Cucumber to validate
+                        front-end and API functionalities</li>
+                    <li>Performed comprehensive manual testing including functional, regression, and smoke testing to
+                        ensure stability across builds</li>
+                    <li>Collaborated with developers and QA engineers to identify, document, and resolve bugs
+                        efficiently, improving overall release quality</li>
+                    <li>Gained hands-on experience across the Software Testing Life Cycle (STLC) from requirement
+                        analysis to test execution and reporting</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h2>Software Engineer</h2>
+                    <span class="experience-date">THUNDER DIGITAL LTD · July 2025 - August 2025</span>
+                </div>
+                <ul class="experience-list">
+                    <li>Contributed to solving real-world issues and enhancing existing solutions across multiple
+                        projects</li>
+                    <li>Gained hands-on experience with NestJS framework for building scalable backend applications</li>
+                    <li>Explored test automation, strengthening problem-solving and development capabilities</li>
+                    <li>Participated in daily stand-ups and worked with tight deadlines in an Agile environment</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h2>Back-end Developer</h2>
+                    <span class="experience-date">DevelopersHub Corporation · January 2025 - February 2025</span>
+                </div>
+                <ul class="experience-list">
+                    <li>Spearheaded backend development for DShopping project, focusing on server-side rendering using
+                        EJS to enhance user experience</li>
+                    <li>Designed and implemented robust RESTful APIs to manage core functionalities, ensuring seamless
+                        integration with frontend</li>
+                    <li>Worked with MongoDB and PostgreSQL databases, leveraging benefits of both NoSQL and SQL systems
+                        for efficient data storage and scalability</li>
+                    <li>Optimized system performance under tight deadlines, ensuring high-quality deliverables</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h2>Teaching Assistant</h2>
+                    <span class="experience-date">FAST-NUCES · January 2025 - June 2025</span>
+                </div>
+                <ul class="experience-list">
+                    <li>Teaching Assistant for Theory of Automata (TOA) and Object-Oriented Programming (OOP) courses
+                    </li>
+                    <li>Graded quizzes and assignments while deepening understanding of core computer science concepts
+                    </li>
+                    <li>Mentored students in understanding complex programming concepts and debugging challenges</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h2>Public Relations Deputy</h2>
+                    <span class="experience-date">ACM FAST NUCES KARACHI · September 2024 - March 2025</span>
+                </div>
+                <ul class="experience-list">
+                    <li>Served as Deputy of Public Relations for university's ACM Society</li>
+                    <li>Organized Fair Coders Cup and contributed to flagship event DevDay'25</li>
+                    <li>Built meaningful connections and expanded professional network within tech community</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h2>Computer Science Student — Dean's List Scholar</h2>
+                    <span class="experience-date">FAST-NUCES · August 2022 - March 2026 (Expected)</span>
+                </div>
+                <ul class="experience-list">
+                    <li>🏆 Dean's List honors for 5 consecutive semesters: Fall 2022, Spring 2023, Fall 2023, Spring
+                        2024, Fall 2024</li>
+                    <li>Junior year pursuing Bachelor's degree in Computer Science with focus on Software Development
+                        and Database Management</li>
+                    <li>Strong foundation in algorithms, data structures, OOP, theory of automata, and full-stack
+                        development</li>
+                    <li>Active participant in coding competitions, hackathons, and ACM chapter activities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h1>Contact Me</h1>
-        <p>Email: <a href="mailto:daniyal236fahim@gmail.com">daniyal236fahim@gmail.com</a></p>
-        <p>Phone: 0331-3426952</p>
-        <p>LinkedIn: <a href="www.linkedin.com/in/daniyal-fahim-26a89b248">Daniyal Fahim</a></p>
-        <p>GitHub: <a href="https://github.com/Daniyal-fahim">Daniyal-fahim</a></p>
+        <h1>Let's Connect</h1>
+
+        <div class="contact-content">
+            <span class="availability-badge">🌍 Available for remote work</span>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <label>Email</label>
+                    <a href="mailto:daniyal236fahim@gmail.com">daniyal236fahim@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <label>LinkedIn</label>
+                    <a href="https://www.linkedin.com/in/daniyal-fahim-26a89b248" target="_blank">Daniyal Fahim</a>
+                </div>
+                <div class="contact-item">
+                    <label>GitHub</label>
+                    <a href="https://github.com/Daniyal-fahim" target="_blank">@Daniyal-fahim</a>
+                </div>
+            </div>
+
+            <div class="recruiter-note">
+                <p><strong>Open to opportunities:</strong> Interested in remote roles with US/EU startups. Available to
+                    interview on PST/EST friendly hours. Looking for positions in backend engineering, full-stack
+                    development, and QA automation.</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="./Profile.pdf" download>Resume</a>
+            <a href="https://www.linkedin.com/in/daniyal-fahim-26a89b248" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Daniyal-fahim" target="_blank">GitHub</a>
+        </div>
+        <p class="copyright">© 2025 Daniyal Fahim. All rights reserved.</p>
+    </footer>
 
     <script src="./index.js"></script>
 </body>
